@@ -1,17 +1,27 @@
 ---
-// TODO: Adjust the webrings accoring to https://astro-webrings.lou.gg/ if you want.
 const webrings = [
   {
-    name: "Join the Astro webring (shoutouts to Lou)",
-    url: "https://astro-webrings.lou.gg/",
+    name: "C++: STL, Concurrency, Low Level Optimization",
     color: "var(--ctp-red)",
   },
+  {
+    name: "Data Structures and Algorithms",
+    color: "var(--ctp-pink)",
+  },
+  {
+    name: "Python: Machine Learning, Data Engineering, FASTAPI Backend",
+    color: "var(--ctp-blue)",
+  },
+  {
+    name: "Git: Version Control, Github Automations",
+    color: "var(--ctp-yellow)",
+  }
 ];
 ---
 
 <section class="webring">
   <div class="content">
-    <h2 class="section-title">Webrings</h2>
+    <h2 class="section-title">Skills</h2>
     <div class="rings">
       {
         webrings.map((ring) => (
