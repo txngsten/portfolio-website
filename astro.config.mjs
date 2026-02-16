@@ -1,12 +1,14 @@
 // @ts-check
-import netlify from "@astrojs/netlify";
 import react from "@astrojs/react";
 import { defineConfig, envField } from "astro/config";
 
-// https://astro.build/config
 export default defineConfig({
+  output: "static",
+  site: "https://txngsten.github.io",
+  base: "/portfolio-website", // remove if repo is username.github.io
+
   integrations: [react()],
-  adapter: netlify(),
+
   env: {
     schema: {
       CLIENT_ID: envField.string({ context: "server", access: "secret" }),
